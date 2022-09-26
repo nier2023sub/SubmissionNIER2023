@@ -4,6 +4,8 @@ This repository is the replication package related to a NEAR 2023 submission.
 In this repository, the code to repeat the experiments is available.
 We reported the datasets to completely reproduce the experiments on MNIST.
 
+"results.csv" contains all the raw results discussed in the paper.
+
 # Requirements
 To run the experiments it is required to install python 3 and all the requirements reported in the requirement.txt file.
 DNN-OS requires the installation of KNIME (https://www.knime.com/downloads).
