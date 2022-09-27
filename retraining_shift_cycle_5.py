@@ -22,10 +22,7 @@ rand_seed = int(sys.argv[2])
 
 path = "Cycle5/rep"+rep
 
-
-print('Downloading MNIST…')
 (Xtrain, ytrain), (Xtest, ytest) = mnist.load_data()
-print('Done!')
 
 x = np.concatenate((Xtrain, Xtest))
 y = np.concatenate((ytrain, ytest))
@@ -97,11 +94,6 @@ y_val_cat = to_categorical(yval)
 
 # print(Xtrain.shape)
 # print(y_train_cat.shape)
-
-# print("NON VA BENE!!! NON MI TROVO CON GLI OUTPUT")
-# print(indexes_df)
-# print(Xtest[indexes_df].shape)
-# print(ytest[indexes_df].shape)
 
 # print(ytest[indexes_df])
 

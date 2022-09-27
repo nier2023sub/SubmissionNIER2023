@@ -9,12 +9,6 @@ from sklearn.model_selection import train_test_split
 from keras import backend as K
 import sys
 
-#set A as true to train and execute CNN A
-#set A as false and B as true to train and execute CNN B
-#set A as false and B as false to train and execute CNN C
-A = False
-B = False
-
 rep = sys.argv[1]
 
 path = "Cycle4/rep"+rep

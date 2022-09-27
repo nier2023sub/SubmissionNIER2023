@@ -11,11 +11,6 @@ from keras import backend as K
 from numpy import genfromtxt
 import sys
 
-#set A as true to train and execute CNN A
-#set A as false and B as true to train and execute CNN B
-#set A as false and B as false to train and execute CNN C
-A = False
-B = False
 
 rep = sys.argv[1]
 
@@ -28,10 +23,8 @@ rand_seed = int(sys.argv[2])
 
 path = "Cycle8/rep"+rep
 
-
-print('Downloading MNIST…')
 (Xtrain, ytrain), (Xtest, ytest) = mnist.load_data()
-print('Done!')
+
 
 x = np.concatenate((Xtrain, Xtest))
 y = np.concatenate((ytrain, ytest))

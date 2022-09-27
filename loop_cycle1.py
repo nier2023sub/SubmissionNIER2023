@@ -20,9 +20,7 @@ test = 1000
 
 rand_seed = int(sys.argv[2])
 
-print('Downloading MNIST…')
 (Xtrain, ytrain), (Xtest, ytest) = mnist.load_data()
-print('Done!')
 
 x = np.concatenate((Xtrain, Xtest))
 y = np.concatenate((ytrain, ytest))
